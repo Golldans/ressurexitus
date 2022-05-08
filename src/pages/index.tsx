@@ -10,9 +10,6 @@ const Home: NextPage = () => {
     <Fragment>
       <section className='w-screen h-screen bg-neutral-900 flex items-center justify-center max-w-full'>
         <div className='relative overflow-hidden w-screen h-screen'>
-          {/* <video autoPlay loop muted >
-            <source src="test.mp4" type='video/mp4'/>
-          </video> */}
           <img src="moth.gif" alt="moth" className='w-full h-full'/>
           <div className='absolute top-0 left-0 bg-black w-screen h-screen mix-blend-multiply flex items-center justify-center text-white text-9xl font-bold'>
             <h1>
@@ -23,7 +20,7 @@ const Home: NextPage = () => {
       </section>
       <section className='w-screen h-screen bg-black flex items-center justify-center max-w-full'>
           <Link href={'/login'}>
-          <h1 className='text-white text-5xl'>
+          <h1 className='text-white text-5xl cursor-pointer'>
             LOGIN
           </h1>
           </Link>
