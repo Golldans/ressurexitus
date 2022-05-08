@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <Fragment>
       <section className='w-screen h-screen bg-neutral-900 flex items-center justify-center max-w-full'>
         <div className='relative overflow-hidden w-screen h-screen'>
-          <img src="moth.gif" alt="moth" className='w-full h-full'/>
+          <Image src={'/moth.gif'} alt='mariposa'  layout='fill' className='w-full h-full'></Image>
           <div className='absolute top-0 left-0 bg-black w-screen h-screen mix-blend-multiply flex items-center justify-center text-white text-9xl font-bold'>
             <h1>
             Golldan
