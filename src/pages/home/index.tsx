@@ -6,29 +6,40 @@ export default function Home() {
     return (
         <Fragment>
             <main className="flex">
-               <div className="h-screen w-1/6 flex flex-col items-center justify-center sticky top-0 bg-neutral-900">
-                    <div className="w-full h-5/6 flex flex-col items-center justify-start">
-                        <MenuItems title={'Profile'}/>
-                        <MenuItems title={'Activity'}/>
-                    </div>
-                    <div className="w-full h-1/6 flex items-center justify-center">
-                        <div className="w-5/6 h-1/2 flex flex-col bg-white rounded-md">
-                            <span>
-                                Hello, i&apos;m a user!
-                            </span>
-                            <span>
-                                And i&apos;m his score!
-                            </span>
+               <div className="h-screen w-screen grid grid-cols-10 grid-rows-7 bg-neutral-900">
+                    <div className="bg-white row-span-7 grid grid-rows-7">
+                        <div className="bg-purple-800">
+
+                        </div>
+                        <div className="bg-zinc-900 hover:bg-gray-800 duration-200 transition cursor-pointer flex items-center justify-center text-white">
+                            Hello
+                        </div>
+                        <div className="bg-zinc-900 hover:bg-gray-800 duration-200 transition cursor-pointer flex items-center justify-center text-white">
+                            Hello
+                        </div>
+                        <div className="bg-zinc-900 hover:bg-gray-800 duration-200 transition cursor-pointer flex items-center justify-center text-white">
+                            Hello
+                        </div>
+                        <div className="bg-zinc-900 hover:bg-gray-800 duration-200 transition cursor-pointer flex items-center justify-center text-white">
+                            Hello
+                        </div>
+                        <div className="bg-zinc-900 hover:bg-gray-800 duration-200 transition cursor-pointer flex items-center justify-center text-white">
+                            Hello
+                        </div>
+                        <div className="bg-zinc-900 hover:bg-gray-800 duration-200 transition cursor-pointer flex items-center justify-center text-white">
+                            
                         </div>
                     </div>
-                </div>
-                <div className="w-4/6 flex flex-col items-center justify-start bg-neutral-900">
-                    <PostTemplate />
-                    <PostTemplate />
-                    <PostTemplate />
-                    <PostTemplate />
-                </div>
-                <div className="h-screen w-1/6 sticky top-0 bg-neutral-900">
+                    <div className="bg-zinc-900 col-span-9">
+
+                    </div>
+                    <div className="col-span-9 row-span-6 flex items-center justify-start flex-col">
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                    </div>
                 </div> 
             </main>
         </Fragment>
