@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { Fragment, useState } from "react";
 import { http } from "../../util/http";
 
@@ -33,10 +34,23 @@ export default function Login() {
 
     return (
         <Fragment>
-            <section className="w-screen h-screen bg-neutral-900 flex flex-col items-center justify-center">
+            <section className="w-screen h-screen bg-neutral-900 bg-cover bg-center flex flex-col items-center justify-center">
+                <div className="w-screen h-1/6 flex items-center justify-between p-2">
+                    <Link href={'#'}>
+                        <a className="text-white">
+                            Back to menu
+                        </a>
+                    </Link>
+                    <Link href={'#'}>
+                        <a className="text-white" onClick={handleShowTrustMessage}>
+                            New here?
+                        </a>
+                    </Link>
+                </div>
+                <div className="w-screen h-5/6 flex flex-col items-center justify-center">
                 {
                     showTrustMessage ?
-                    <form className="flex flex-col items-center justify-center" onSubmit={registerUser}>
+                    <form className="w-96 flex flex-col items-center justify-center" onSubmit={registerUser}>
                         <h1>
                             Should we trust you?
                         </h1>
@@ -51,18 +65,13 @@ export default function Login() {
                         </div>
                     </form>
                     :
-                    <form className="flex flex-col">
-                        <input placeholder="Username" type="text" name="" id=""  className="m-5"/>
-                        <input placeholder="Password" type="password" name="" id="" className="m-5"/>
-                        <div>
-                            <button className="bg-purple-700 m-1">Forgot your password?</button>
-                            <button className="bg-purple-700 m-1">Login</button>
-                        </div>
+                    <form className="w-96 flex flex-col items-center text-white">
+                        <input placeholder="Username" type="text" name="" id=""  className="m-5 w-80 p-2 bg-transparent bg-white border-b-2 focus:outline-none"/>
+                        <input placeholder="Password" type="password" name="" id="" className="m-5 w-80 p-2 bg-transparent bg-white border-b-2 focus:outline-none"/>
+                        <button className="bg-purple-700 m-1 p-2 w-80 hover:bg-purple-900 duration-400 transition">Login</button>
                     </form>
                 }
-                <button className="bg-purple-700 p-5 hover:bg-purple-900 duration-200" onClick={handleShowTrustMessage}>
-                    New here?
-                </button>
+                </div>
             </section>
         </Fragment>
     ) 

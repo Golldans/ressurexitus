@@ -33,7 +33,18 @@ export default function Home() {
                     <div className="bg-zinc-900 col-span-9">
 
                     </div>
-                    <div className="col-span-9 row-span-6 flex items-center justify-start flex-col">
+                    <div className="col-span-9 row-span-6 flex items-center justify-start flex-col overflow-y-scroll">
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
+                        <PostTemplate />
                         <PostTemplate />
                         <PostTemplate />
                         <PostTemplate />
